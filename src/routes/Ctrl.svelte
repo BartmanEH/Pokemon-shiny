@@ -98,6 +98,12 @@ let switcher = {
   class="header"
   style={ `--rate-owns: ${counter.rate.owns}; --rate-registered: ${counter.rate.registered};` }
 >
+  <div class="info-bar">
+    We suggest you visit the new version of the website to use the latest shiny info.
+    <a href="https://rplus.github.io/pokemongo-shiny/">
+      https://rplus.github.io/pokemongo-shiny/
+    </a>
+  </div>
 
   <h1>
     <img src="./favicon.png" width="36" height="36" alt="">
@@ -248,6 +254,21 @@ let switcher = {
 
 
 <style global>
+  .info-bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: .25em 1em;
+    background-color: #ffc;
+    font-family: monospace;
+    color: #000;
+
+    a {
+      color: inherit;
+    }
+  }
+
   .header {
     position: relative;
     margin-bottom: 3rem;
